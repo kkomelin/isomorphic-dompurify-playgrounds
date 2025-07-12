@@ -1,0 +1,19 @@
+{
+  "name": "nuxt",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "isomorphic-dompurify": "^2.26.0",
+    "nuxt": "^3.17.6",
+    "vue": "^3.5.17",
+    "vue-router": "^4.5.1"
+  },
+  "packageManager": "pnpm@9.1.1+sha1.09ada6cd05003e0ced25fb716f9fda4063ec2e3b"
+}
