@@ -7,11 +7,10 @@
     "next:dev": "pnpm --filter next dev",
     "nuxt:dev": "pnpm --filter nuxt dev",
     "react:dev": "pnpm --filter react dev",
-    "svelte:dev": "pnpm --filter svelte dev"
+    "svelte:dev": "pnpm --filter svelte dev",
+    "test": "playwright test"
   },
-  "keywords": [
-    
-  ],
+  "keywords": [],
   "author": "",
   "license": "MIT",
   "packageManager": "pnpm@10.13.1",
@@ -19,5 +18,8 @@
     "onlyBuiltDependencies": [
       "esbuild"
     ]
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.54.1"
   }
 }

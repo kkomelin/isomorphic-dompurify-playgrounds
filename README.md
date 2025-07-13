@@ -1,13 +1,27 @@
-# isomorphic-dompurify Playgrounds
+# isomorphic-dompurify playgrounds
 
-A monorepo which contains playgrounds for popular frameworks with [isomorphic-dompurify](https://github.com/kkomelin/isomorphic-dompurify) test usage.
+Contains the simplest setups for popular frameworks with [isomorphic-dompurify](https://github.com/kkomelin/isomorphic-dompurify) examples to make sure that `isomorphic-dompurify` is working for each framework.
 
-It helps reproduce user environment to debug issues.
+## Available playgrounds
 
-## Available Playgrounds
+- Astro
+- Next
+- Nuxt
+- React
+- Svelte
 
-- `pnpm astro:dev` - Run Astro playground
-- `pnpm next:dev` - Run Next.js playground
-- `pnpm nuxt:dev` - Run Nuxt playground
-- `pnpm react:dev` - Run React playground
-- `pnpm svelte:dev` - Run React playground
+**Send a PR if you want to add your framework of choice.**
+
+## Install deps
+
+```bash
+pnpm install
+```
+
+## Run tests
+
+```bash
+pnpm test
+```
+
+See [source code](./test/dompurify.test.js) fo the test.
