@@ -10,3 +10,4 @@ It helps reproduce user environment to debug issues.
 - `pnpm next:dev` - Run Next.js playground
 - `pnpm nuxt:dev` - Run Nuxt playground
 - `pnpm react:dev` - Run React playground
+- `pnpm svelte:dev` - Run React playground

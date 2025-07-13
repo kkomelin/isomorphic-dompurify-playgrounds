@@ -6,10 +6,18 @@
     "astro:dev": "pnpm --filter astro dev",
     "next:dev": "pnpm --filter next dev",
     "nuxt:dev": "pnpm --filter nuxt dev",
-    "react:dev": "pnpm --filter react dev"
+    "react:dev": "pnpm --filter react dev",
+    "svelte:dev": "pnpm --filter svelte dev"
   },
-  "keywords": [],
+  "keywords": [
+    
+  ],
   "author": "",
   "license": "MIT",
-  "packageManager": "pnpm@10.13.1"
+  "packageManager": "pnpm@10.13.1",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
 }
