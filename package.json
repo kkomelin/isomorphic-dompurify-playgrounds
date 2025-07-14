@@ -16,7 +16,11 @@
   "packageManager": "pnpm@10.13.1",
   "pnpm": {
     "onlyBuiltDependencies": [
-      "esbuild"
+      "@parcel/watcher",
+      "esbuild",
+      "sharp",
+      "unrs-resolver",
+      "workerd"
     ]
   },
   "devDependencies": {
