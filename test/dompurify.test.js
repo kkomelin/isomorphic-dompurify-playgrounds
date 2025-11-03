@@ -121,7 +121,7 @@ for (let framework of frameworks) {
 
         await page.goto(`http://localhost:${port}/`);
         const text = page.getByText(
-          `<a href="https://${framework}">${framework}</a>`
+          `<a href="https://${framework}">Test</a>`
         );
         await expect(text).toBeVisible();
       } finally {
