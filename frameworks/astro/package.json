@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "astro": "^5.15.3",
-    "isomorphic-dompurify": "^2.31.0"
+    "isomorphic-dompurify": "^2.31.0",
+    "jsdom": "^27.1.0"
   }
 }

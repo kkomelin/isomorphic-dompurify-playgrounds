@@ -21,6 +21,7 @@
 		"vite": "^7.1.12"
 	},
 	"dependencies": {
-		"isomorphic-dompurify": "^2.31.0"
+		"isomorphic-dompurify": "^2.31.0",
+		"jsdom": "^27.1.0"
 	}
 }
