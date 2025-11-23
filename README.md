@@ -1,4 +1,5 @@
 # isomorphic-dompurify playgrounds
+[![Run Tests](https://github.com/kkomelin/isomorphic-dompurify-playgrounds/actions/workflows/test.yml/badge.svg)](https://github.com/kkomelin/isomorphic-dompurify-playgrounds/actions/workflows/test.yml)
 
 Contains the simplest setups for popular frameworks with [isomorphic-dompurify](https://github.com/kkomelin/isomorphic-dompurify) examples to make sure that `isomorphic-dompurify` is working for each framework.
 
