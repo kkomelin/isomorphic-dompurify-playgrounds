@@ -9,8 +9,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.16.0",
-    "isomorphic-dompurify": "^2.33.0",
-    "jsdom": "^27.2.0"
+    "astro": "^5.16.4",
+    "isomorphic-dompurify": "^2.34.0",
+    "jsdom": "^27.3.0"
   }
 }
