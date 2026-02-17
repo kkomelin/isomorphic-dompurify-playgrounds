@@ -10,10 +10,10 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "isomorphic-dompurify": "3.0.0-rc.1",
-    "jsdom": "^28.0.0",
-    "nuxt": "^4.3.0",
-    "vue": "^3.5.27",
+    "isomorphic-dompurify": "3.0.0-rc.3",
+    "jsdom": "^28.1.0",
+    "nuxt": "^4.3.1",
+    "vue": "^3.5.28",
     "vue-router": "^5.0.2"
   },
   "packageManager": "pnpm@9.1.1+sha1.09ada6cd05003e0ced25fb716f9fda4063ec2e3b"
