@@ -1,12 +1,17 @@
 {
   "name": "isomorphic-dompurify-playgrounds",
   "version": "0.1.0",
-  "description": "",
+  "description": "isomorphic-dompurify playgrounds for testing it with different frameworks",
   "scripts": {
     "test": "playwright test"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "isomorphic",
+    "dompurify",
+    "playgrounds",
+    "isomorphic-dompurify"
+  ],
+  "author": "Konstantin Komelin <konstantin.komelin@gmail.com>",
   "license": "MIT",
   "packageManager": "pnpm@10.20.0",
   "pnpm": {
