@@ -13,17 +13,8 @@
   ],
   "author": "Konstantin Komelin <konstantin.komelin@gmail.com>",
   "license": "MIT",
-  "packageManager": "pnpm@10.32.1",
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@parcel/watcher",
-      "esbuild",
-      "sharp",
-      "unrs-resolver",
-      "workerd"
-    ]
-  },
+  "packageManager": "pnpm@11.1.3",
   "devDependencies": {
-    "@playwright/test": "^1.59.1"
+    "@playwright/test": "^1.60.0"
   }
 }
