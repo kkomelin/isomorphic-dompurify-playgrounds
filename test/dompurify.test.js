@@ -1,11 +1,19 @@
 import { expect, test } from "@playwright/test";
 import { spawn } from "child_process";
+import { readdirSync } from "fs";
 import { promisify } from "util";
 import { createServer } from "net";
+import { join } from "path";
 
 const sleep = promisify(setTimeout);
 
-const frameworks = ["astro", "next", "nuxt", "react", "svelte"];
+// Every directory in frameworks/ is a playground to test
+const frameworks = readdirSync(join(__dirname, "..", "frameworks"), {
+  withFileTypes: true,
+})
+  .filter((entry) => entry.isDirectory())
+  .map((entry) => entry.name)
+  .sort();
 
 // Find an available port dynamically
 const getAvailablePort = () => {
@@ -54,6 +62,14 @@ const runFramework = (name, port) => {
   ], {
     stdio: "ignore",
     detached: true, // Create new process group for easier cleanup
+    env: {
+      ...process.env,
+      // Prevent Astro 7+ from turning the dev server into a detached
+      // background daemon when it detects an AI agent environment - the
+      // daemon would survive the process-group kill in stopFramework
+      // and block subsequent runs
+      ASTRO_DEV_BACKGROUND: "0",
+    },
   });
 
   // Track if spawn failed
@@ -107,6 +123,11 @@ const stopFramework = async (instance) => {
 for (let framework of frameworks) {
   test.describe(framework, () => {
     test(`should display sanitized text`, async ({ page }) => {
+      // Must exceed the waitForServer timeout (60s), otherwise Playwright
+      // kills the worker before the finally block can stop the dev server,
+      // leaking its process tree
+      test.setTimeout(90000);
+
       let instance = null;
       let port = null;
 
