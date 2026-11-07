@@ -13,8 +13,8 @@
   ],
   "author": "Konstantin Komelin <konstantin.komelin@gmail.com>",
   "license": "MIT",
-  "packageManager": "pnpm@12.3.4",
+  "packageManager": "pnpm@12.18.0",
   "devDependencies": {
-    "@playwright/test": "^1.63.0"
+    "@playwright/test": "^1.65.0"
   }
 }
